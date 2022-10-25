@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Все сообщения" android:id="@+id/all_messages" />
+    <item android:title="Отправленные сообщения" android:id="@+id/messages_sended" />
+    <item android:title="Черновики" android:id="@+id/drafts" />
+    <item android:title="Удалено" android:id="@+id/deleted" />
+    <item android:title="Выйти" android:id="@+id/log_out" />
+</menu>

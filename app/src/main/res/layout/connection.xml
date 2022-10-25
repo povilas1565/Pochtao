@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pochta O"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginTop="25dp"
+        android:id="@+id/textView" android:textSize="24sp" android:textColor="#020202" android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10" android:hint="Почта" android:inputType="textPersonName|textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10" android:hint="Пароль"
+        android:inputType="textPersonName|textPassword" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/etEmail"/>
+    <Button
+        android:text="Соединение"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btLogin"
+        android:background="#4E4C4C" android:backgroundTint="#515050"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" android:layout_marginTop="30dp"
+        android:layout_marginEnd="144dp" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="145dp"
+        android:textColor="#FFFFFF" style="@android:style/Widget.Material.Light.Button.Borderless"/>
+    <Button
+        android:text="Регистрация"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btSignup"
+        app:layout_constraintTop_toBottomOf="@+id/btLogin"
+        android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="140dp" android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#575656" android:textColor="#FDFCFC" app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp" app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.03"/>
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="140dp" app:srcCompat="@drawable/logomail" android:id="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="95dp" android:layout_marginEnd="95dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
